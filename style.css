@@ -1,0 +1,76 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color:gainsboro;
+}
+
+.container{
+    display: flex;
+    margin-top: 200px;
+    padding: 0;
+    flex-direction:column;
+    align-items: center;
+}
+
+.container input{
+    height: 40px;
+    width: 400px;
+    outline: none;
+    font-size: large;
+    background-color: transparent;
+    border:2px solid;
+    border-color: transparent transparent red transparent;
+}
+
+.container input:focus{
+    width: 430px;
+    transition-duration: 0.2s;
+}
+
+h1{
+    font-size: 40px;
+}
+
+.container button{
+    height: 45px;
+    width:150px;
+    margin-left: 20px;
+    color: white;
+    border-radius: 5px;
+    font-size: large;
+    background-color: red;
+    border: 7px solid red;
+    align-items: center;
+    justify-content: center;
+}
+
+.container button:hover{
+    background-color: transparent;
+    color: black;
+    border: 3px solid red;
+    transition-duration: 0.4s;
+}
+
+@media screen and (max-width:420px) {
+    .container input{
+        width: 200px;
+        font-size: medium;
+    }
+
+    .container input:focus{
+        width: 220px;
+        transition-duration: 0.2s;
+    }
+
+    .container button{
+        width: 100px;
+       font-size: medium;
+       margin-left: 10px;
+    }
+
+    h1{
+        font-size: larger;
+    }
+    
+}
